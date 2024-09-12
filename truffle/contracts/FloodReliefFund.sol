@@ -80,16 +80,16 @@ contract FloodReliefFund {
     function GetFundraiserBalance() public view returns (Balance memory) {
         return Balance(
             fundraiserBalance[sylhetFund] / 1 ether, 
-            fundraiserBalance[chittagongSouthFund] / 1 ether, 
-            fundraiserBalance[chittagongNorthFund] / 1 ether
+            fundraiserBalance[chittagongNorthFund] / 1 ether,
+            fundraiserBalance[chittagongSouthFund] / 1 ether 
         );
     }
 
     function GetRealBalance() public view returns (Balance memory) {
         return Balance(
             sylhetFund.balance / 1 ether,
-            chittagongSouthFund.balance / 1 ether,
-            chittagongNorthFund.balance / 1 ether
+            chittagongNorthFund.balance / 1 ether,
+            chittagongSouthFund.balance / 1 ether
         );
     }
 

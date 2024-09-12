@@ -23,6 +23,7 @@ const Info = () => {
             setInfo(null); // Clear any previous info
           } else {
             setErrorMsg("An unexpected error occurred");
+            console.log(error);
             setInfo(null); // Clear any previous info
           }
         }

@@ -1,39 +1,68 @@
-# React Truffle Box
+# Flood Relief Fund
 
-This box comes with everything you need to start using Truffle to write, compile, test, and deploy smart contracts, and interact with them from a React app.
+A project where one can donate cryptocurrencies and the fundraiser and collect cryptocurrencies.
 
-## Installation
+## Prerequisite
 
-First ensure you are in an empty directory.
+* Make sure you have `truffle` and `ganache` installed in your machine.
+* Make sure you have `MetaMask` installed in your browser.
 
-Run the `unbox` command using 1 of 2 ways.
+## How to run
 
-```sh
-# Install Truffle globally and run `truffle unbox`
-$ npm install -g truffle
-$ truffle unbox react
-```
+* First clone the repository using the below command.
 
-```sh
-# Alternatively, run `truffle unbox` via npx
-$ npx truffle unbox react
-```
+  ```shell
+  git clone https://github.com/eniac00/FloodReliefFund.git
+  ```
 
-Start the react dev server.
+* Go to `truffle` and `client` directory and install the dependencies using `npm install` command.
 
-```sh
-$ cd client
-$ npm start
-```
+* Next, run `ganache`.
 
-From there, follow the instructions on the hosted React app. It will walk you through using Truffle and Ganache to deploy the `SimpleStorage` contract, making calls to it, and sending transactions to change the contract's state.
+* Go to `truffle` directory there create a `.env` file and paste three public address from `ganache` as fundraiser account.
 
-## FAQ
+  ```shell
+  SYLHET_ADDRESS=0x770C3E07b193f7ac88B92385c38F5CdcEF65D4Be
+  CHITTAGONGSOUTH_ADDRESS=0x5D24D8b547f7c4eDe05364C5DaC6170A279b3Cfe
+  CHITTAGONGNORTH_ADDRESS=0xc2e96F569074163329c48F12B3664F4B958E006C
+  ```
+  
+* Do a migration using `truffle`. Please make sure you are in the `truffle` directory.
+  
+  ```shell
+  truffle migrate --reset
+  ```
+  
+* Connect an account in `meta mask` using a private address from `ganache`.
 
-- __How do I use this with Ganache (or any other network)?__
+* Go to `client` directory and run the project.
 
-  The Truffle project is set to deploy to Ganache by default. If you'd like to change this, it's as easy as modifying the Truffle config file! Check out [our documentation on adding network configurations](https://trufflesuite.com/docs/truffle/reference/configuration/#networks). From there, you can run `truffle migrate` pointed to another network, restart the React dev server, and see the change take place.
+  ```
+  npm start
+  ```
 
-- __Where can I find more resources?__
+* Visit `localhost:8080` or `[Device IP]:8080` in your favorite browser.
 
-  This Box is a sweet combo of [Truffle](https://trufflesuite.com) and [Webpack](https://webpack.js.org). Either one would be a great place to start!
+## Tutorial
+
+* Once you are in the browser in the page you will see a welcome screen and it will tell you to `Register`.
+
+  ![1](/home/abir/CSE446/FloodReliefFund/screenshots/1.png)
+
+* Click `Register` button to register before donate.
+
+  ![2](/home/abir/CSE446/FloodReliefFund/screenshots/2.png)
+
+* After registration you will be redirected to the `Info` page where you will see your registration info (if the registration was successful). 
+
+* Go to `Donate` for donation now you will see a picture like below.
+
+  ![3](/home/abir/CSE446/FloodReliefFund/screenshots/3.png)
+
+  
+
+* Give donation amount and mobile number (mobile number should match) and select a zone then click on `Donate`, as simple as that.
+
+* See all the fundraiser balance and total funds in the `Balance` page.
+
+  ![4](/home/abir/CSE446/FloodReliefFund/screenshots/4.png)

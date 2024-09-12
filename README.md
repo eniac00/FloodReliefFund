@@ -47,17 +47,17 @@ A project where one can donate cryptocurrencies and the fundraiser and collect c
 
 * Once you are in the browser in the page you will see a welcome screen and it will tell you to `Register`.
 
-  ![1](/home/abir/CSE446/FloodReliefFund/screenshots/1.png)
+  ![1](./screenshots/1.png)
 
 * Click `Register` button to register before donate.
 
-  ![2](/home/abir/CSE446/FloodReliefFund/screenshots/2.png)
+  ![2](./screenshots/2.png)
 
 * After registration you will be redirected to the `Info` page where you will see your registration info (if the registration was successful). 
 
 * Go to `Donate` for donation now you will see a picture like below.
 
-  ![3](/home/abir/CSE446/FloodReliefFund/screenshots/3.png)
+  ![3](./screenshots/3.png)
 
   
 
@@ -65,4 +65,4 @@ A project where one can donate cryptocurrencies and the fundraiser and collect c
 
 * See all the fundraiser balance and total funds in the `Balance` page.
 
-  ![4](/home/abir/CSE446/FloodReliefFund/screenshots/4.png)
+  ![4](./screenshots/4.png)

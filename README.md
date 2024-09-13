@@ -69,5 +69,5 @@ A project where one can donate cryptocurrencies and the fundraiser and collect c
 
 * If you want see any donor info just go to the `Check Donor` page by clicking on the `Donors`. Provide the public address of the donors and press `Find`.
 
-  ![5](/home/abir/CSE446/FloodReliefFund/screenshots/5.png)
+  ![5](./screenshots/5.png)
 

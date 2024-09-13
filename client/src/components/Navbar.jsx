@@ -11,6 +11,7 @@ function Navbar() {
           <li><Link to="/register">Register</Link></li>
           <li><Link to="/donate">Donate</Link></li>
           <li><Link to="/balance">Balance</Link></li>
+          <li><Link to="/donors">Donors</Link></li>
         </ul>
       </div>
       <div className="navbar-end flex-1"></div> {/* Creates space on the right */}
